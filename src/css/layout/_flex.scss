@@ -1,0 +1,16 @@
+.l-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .l-flex {
+        &.--spmax {
+            .l-flex__col {
+                width: 100%;
+            }
+        }
+    }
+}

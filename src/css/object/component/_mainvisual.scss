@@ -1,0 +1,31 @@
+/* mainvisual */
+
+.c-mainvisual {
+    position: relative;
+    top: 0;
+    background-image: url('./images/common/mv.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center bottom;
+    padding-bottom: 22%;
+    &::before{
+		content: "";
+		display: block;
+		background-image: url('./images/common/mv_before.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		width: 100%;
+		padding-top: 30%;
+		bottom: 0;
+        z-index: 1;
+	}
+    &__wrapimg {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    &__img{
+        width: 100%;
+    }
+}

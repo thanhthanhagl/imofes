@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		<%= getHeadPageTitle(); %>
+	</title>
+	<meta name="description" content="<%= getDescription(); %>">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%= getSiteUrl(); %>">
+	<meta property="og:title" content="<%= getSiteTitle(); %>">
+	<meta property="og:description" content="<%= getDescription(); %>">
+	<meta property="og:image" content="<%= getSiteUrl(); %>/ogp.jpg">
+	<meta property="og:site_name" content="<%= getSiteTitle(); %>">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<meta name="format-detection" content="telephone=no,email=no,address=no">
+	<link rel="shortcut icon" href="<%= getRelativePath('/favicon.ico'); %>">
+	<link rel="apple-touch-icon" href="<%= getRelativePath('/apple-touch-icon.png'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/style.css'); %>">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="<%= getBodyClass(); %>">
+	<div class="l-all">
+		<header class="l-header">
+			<div class="c-mainvisual">
+				<div class="c-mainvisual__wrapimg">
+					<h1><img class="c-mainvisual__img" src="<%= getRelativePath('/images/index/top.png'); %>" alt="九州連携・おおいた農産物フェア いもフェスinマリノアシティ福岡　大分県産高糖度さつまいも甘太くんがやって来る！"></h1>
+				</div>
+			</div>
+		</header>
+		<!-- /.l-header -->
+		<main id="l-primary">
+			<article>

@@ -1,0 +1,57 @@
+.c-banner{
+    padding: 18px 0;
+    position: relative;
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+    }
+    &__col{
+        padding-bottom: 29%;
+        position: relative;
+        &:first-child{
+            background-image: url('./images/index/banner-left.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:last-child{
+            background-image: url('./images/index/banner-right.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &--left{
+        width: 44.7%;
+    }
+    &--right{
+        width: 53.6%;
+    }
+}
+@include media-breakpoint-tab-sp{
+    .c-banner{
+        &__main{
+            flex-direction: column;
+        }
+        &__col{
+            &:last-child{
+                padding-bottom: 54%;
+            }
+            &:first-child{
+                padding-bottom: 64.9%;
+            }
+        }
+        &--left{
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 12px;
+            height: auto;
+        }
+        &--right{
+            width: 100%;
+            max-width: unset;
+            height: auto;
+        }
+    }
+}

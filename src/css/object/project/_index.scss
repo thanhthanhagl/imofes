@@ -1,0 +1,69 @@
+.p-index {
+    font-family: $font-family-noto;
+    background-color: #F8B62D;
+    &__info{
+        margin-top: -20%;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        &__img{
+            img{
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto 1em;
+            }
+        }
+        &__text {
+            margin: 9px auto 0;
+            font-size: 1.7vw;
+            color: $brand-color;
+            font-weight: 500;
+            &__list{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+    &__feature{
+        position: relative;
+        z-index: 2;
+        background-image: url('./images/index/bg-feature.png');
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position: center top;
+    }
+    &__banner{
+        position: relative;
+        z-index: 2;
+        background-image: url('./images/index/bg-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+
+
+@include media-breakpoint-tab-sp {
+    .p-index {
+        &__info{
+            margin-top: -15%;
+            &__text {
+                &__list{
+                    flex-wrap: wrap;
+                    gap: 0 20px;
+                    font-size: rem(14);
+                }
+            }
+        }
+        &__feature{
+            background-size: contain;
+        }
+        &__banner{
+            background-size: contain;
+        }
+    }
+}
